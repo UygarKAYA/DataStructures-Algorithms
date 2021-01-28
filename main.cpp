@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 		std::cin >> testfile;
 	}
 	else 
-        testfile = argv[1];
+        	testfile = argv[1];
 
 	std::ifstream file(testfile.c_str());
 	if (file.is_open())
@@ -35,11 +35,11 @@ int main(int argc, char *argv[]) {
 	std::cin >> k;
 	
 	// Create a TestBed object, initialize and execute the algorithm
-    	TestBed* testbed = new TestBed();
-    	testbed->setAlgorithm(algorithmType, k);
-    	testbed->execute();
-    	delete testbed;
-    	//testbed->~TestBed();
+	TestBed* testbed = new TestBed();
+	testbed->setAlgorithm(algorithmType, k);
+	testbed->execute();
+	delete testbed;
+	//testbed->~TestBed();
 
 	return 0;
 }
