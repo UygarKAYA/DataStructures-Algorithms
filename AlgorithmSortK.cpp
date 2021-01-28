@@ -41,10 +41,10 @@ int AlgorithmSortK :: select()
                 {
                     for(int z = k-1; z >= j; --z)
                     {
-						array[z] = array[z-1];
-					}
-					array[j] = number;
-					break;
+		    	array[z] = array[z-1];
+		    }
+		    array[j] = number;
+                    break;
                 }
             }
         }
